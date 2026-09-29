@@ -1,0 +1,77 @@
+html,body{margin:0;padding:0}
+.pf{--bg:#F4F6FA;--card:#fff;--ink:#10182B;--muted:#5B6678;--line:#D9E0EA;--blue:#2457F5;--sun:#FFC857;--hero:#14213D;
+ font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;min-height:100vh;scroll-behavior:smooth}
+.pf.dark{--bg:#0C1220;--card:#131C30;--ink:#E8EDF7;--muted:#95A3BD;--line:#23304B;--blue:#6C93FF;--hero:#0A0F1C}
+.pf *{box-sizing:border-box}.pf h1,.pf h2,.pf h3{font-family:'Bricolage Grotesque',Inter,sans-serif;margin:0;line-height:1.1}
+.pf a{color:inherit}.pf .wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.pf button{font:inherit;color:inherit;cursor:pointer}
+.pf :focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.pf nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.pf nav .wrap{display:flex;align-items:center;gap:18px;height:60px}
+.pf .brand{margin-right:auto;line-height:1.15}.pf .brand b{font-family:'Bricolage Grotesque';font-size:1.15rem;display:block}.pf .brand small{color:var(--muted);font-size:.78rem}
+.pf nav a.hire{padding:6px 14px;white-space:nowrap}
+.pf nav a.l{text-decoration:none;font-size:.92rem;color:var(--muted);font-weight:500}.pf nav a.l:hover{color:var(--ink)}
+.pf .ic{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:6px 10px}
+.pf .btn{display:inline-block;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--blue);background:var(--blue);color:#fff}
+.pf .btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+.pf .hero{background:var(--hero);color:#fff;padding:64px 0}
+.pf .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.pf .role{display:inline-block;background:var(--sun);color:#14213D;font-weight:600;padding:3px 12px;border-radius:6px;margin-bottom:16px}
+.pf .hero h1{font-size:clamp(2.4rem,6vw,4.2rem);font-weight:800;letter-spacing:-.02em}
+.pf .hero p{color:#C5CFE0;font-size:1.08rem;max-width:56ch;margin:16px 0 24px}
+.pf .row{display:flex;flex-wrap:wrap;gap:10px}
+.pf .stats{display:flex;gap:32px;margin-top:32px;flex-wrap:wrap}.pf .stats b{font-family:'Bricolage Grotesque';font-size:2rem;display:block}.pf .stats span{color:#9FB0CC;font-size:.9rem}
+.pf .heroview{display:flex;gap:14px;align-items:flex-end;justify-content:center}
+.pf section{padding:56px 0}.pf .sh{font-size:clamp(1.6rem,4vw,2.3rem);font-weight:800}.pf .sub{color:var(--muted);margin:6px 0 24px}
+.pf .chips{display:flex;flex-wrap:wrap;gap:8px}.pf .chip{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:5px 14px;font-size:.9rem}
+.pf .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.pf .filters button{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:6px 16px;font-size:.9rem}
+.pf .filters button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.pf .proj{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:26px}
+.pf .ph{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;margin-bottom:18px}
+.pf .ph h3{font-size:1.45rem}.pf .ph p{margin:6px 0 10px;color:var(--muted);max-width:60ch}
+.pf .tag{font-size:.78rem;border:1px solid var(--line);border-radius:99px;padding:2px 10px;margin-right:6px;display:inline-block}
+.pf .tools{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap}
+.pf .tog{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.pf .tog button{border:0;background:transparent;padding:7px 12px;font-size:.88rem}.pf .tog button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.pf .lnk{font-size:.88rem;font-weight:600;color:var(--blue);border:1px solid var(--blue);border-radius:8px;padding:6px 12px;background:transparent;text-decoration:none}
+.pf .stage{display:flex;gap:24px;align-items:flex-start;justify-content:center;flex-wrap:wrap}
+.pf .desk{flex:1 1 520px;min-width:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+.pf .bar{display:flex;gap:6px;align-items:center;background:#E7ECF3;padding:8px 12px}.pf .bar i{width:10px;height:10px;border-radius:50%;background:#B7C1D1}
+.pf .bar span{margin-left:8px;font-size:.75rem;color:#5B6678;background:#fff;border-radius:99px;padding:1px 12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.pf .phone{flex:0 0 230px;width:230px;max-width:100%;border:8px solid #14213D;border-radius:30px;overflow:hidden;background:#fff}.pf .phone.solo{flex-basis:300px;width:300px}
+.pf .scaled{position:relative;overflow:hidden;width:100%;background:#fff}
+.pf .scaled iframe,.pf .scaled img{position:absolute;top:0;left:0;border:0;transform-origin:top left;background:#fff}
+.pf .scaled .sk{position:absolute;inset:0;background:linear-gradient(90deg,#eef1f6,#f8fafc,#eef1f6);background-size:200% 100%;animation:sk 1.4s linear infinite}
+@keyframes sk{to{background-position:-200% 0}}
+.pf .note{font-size:.8rem;color:var(--muted);margin:12px 0 0}
+.pf .plugs,.pf .tests{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.pf .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px}
+.pf .card ul{margin:0;padding-left:20px;color:var(--muted)}.pf .card .btn{align-self:flex-start}
+.pf .ver{font-size:.78rem;background:var(--sun);color:#14213D;border-radius:6px;padding:1px 8px;font-weight:600;margin-left:8px}
+.pf form{display:grid;gap:12px;max-width:560px}
+.pf input,.pf textarea{font:inherit;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:11px 12px;width:100%}
+.pf .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.pf .msg{padding:12px 14px;border-radius:8px;font-size:.95rem;margin:0}.pf .msg.ok{background:#E3F6EA;color:#14532D}.pf .msg.err{background:#FDE8E8;color:#7F1D1D}
+.pf .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pf button[disabled]{opacity:.6;cursor:wait}
+.pf footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--muted);font-size:.9rem}
+.pf .modal{position:fixed;inset:0;z-index:50;background:rgba(6,10,20,.78);display:flex;flex-direction:column;align-items:center;padding:16px;overflow:auto}
+.pf .mbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:#fff;margin-bottom:12px;width:100%;max-width:1200px}.pf .mbar b{margin-right:auto}
+.pf .mbar .tog{background:#fff;color:#10182B}.pf .mbar .tog button[aria-pressed=true]{background:#14213D;color:#fff}
+.pf .mframe{width:100%;background:#fff;border-radius:10px;overflow:hidden;margin:auto 0}
+@media (max-width:560px){.pf .two{grid-template-columns:1fr}}
+@media (max-width:480px){.pf nav .wrap{gap:8px}.pf .ic .tx{display:none}.pf nav a.hire{font-size:.8rem;padding:6px 10px}.pf .brand b{font-size:1rem}}
+@media (max-width:860px){.pf .hero .wrap{grid-template-columns:1fr}.pf nav a.l{display:none}}
+@media (prefers-reduced-motion:reduce){.pf,.pf .scaled .sk{animation:none;scroll-behavior:auto}}
+.pf .tab{flex:0 0 300px;width:300px;max-width:100%;border:8px solid #14213D;border-radius:22px;overflow:hidden;background:#fff}.pf .tab.solo{flex-basis:520px;width:520px}
+.pf .cap{font-size:.75rem;color:var(--muted);text-align:center;margin:6px 0 0}
+.pf .more{display:block;margin:8px auto 0}
+.pf .pill{display:inline-block;font-size:.72rem;background:var(--sun);color:#14213D;border-radius:6px;padding:1px 8px;font-weight:600;margin-left:8px;vertical-align:middle}
+.pf .shotfail{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;font-size:.8rem;color:#5B6678;background:#f4f6fa}
+
+/* device wrappers need a real width, otherwise the preview box measures 0px and shows nothing */
+.pf .dev{display:flex;flex-direction:column;align-items:center;max-width:100%;min-width:0}
+.pf .stage{width:100%}
+.pf .desk.solo{flex-basis:100%}
+.pf .ph{align-items:flex-start}
+@media (max-width:600px){.pf .proj{padding:14px}.pf .tools{width:100%}.pf .tog{flex-wrap:wrap}}
+.pf .dev>.tab,.pf .dev>.phone{flex:none}
